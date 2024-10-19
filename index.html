@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Login Page</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #15202B;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #1B2935;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 360px;
+        }
+
+        /* X Logo */
+        .login-container img {
+            width: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* Input fields */
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #657786;
+            border-radius: 8px;
+            background-color: #273340;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        /* Login button */
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #1DA1F2;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #1A91DA;
+        }
+
+        /* Links for forgot password and sign-up */
+        .login-container .links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container .links a {
+            color: #1DA1F2;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .login-container .footer-meta {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #8899A6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .login-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- X Logo using alternate external URL -->
+        <img src="./img/xlogo.jpeg" alt="X Logo">
+
+        <!-- Login Form -->
+        <form action="#" method="POST">
+            <input type="text" name="username" placeholder="Username or Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+
+        <!-- Forgot password and sign-up links -->
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <span>|</span>
+            <a href="#">Sign up for X</a>
+        </div>
+
+        <!-- Footer meta -->
+        <div class="footer-meta">© 2024 X Corp</div>
+    </div>
+
+</body>
+</html>
